@@ -1,0 +1,16 @@
+<ion-view view-title="search">
+	<ion-content>
+		<div id="imagen">
+			<img ng-src="{{'img/logo.png'}}">
+			<h1>Resultados:</h1>			
+		</div>
+		<div class="list">
+		  <a class="item" ng-repeat="cards in cardsList" ng-click="{{cards.imageUrl}}" align="center" id="principal">
+		    <img ng-src={{cards.imageUrl}}>
+		      <h2>Nombre: {{cards.name}} </h2>
+		      <p>Tipo: {{cards.type}}</p>
+		      <p>Coste de mana: {{cards.manaCost}}</p>
+		   </a>
+		</div>
+	</ion-content>
+</ion-view>

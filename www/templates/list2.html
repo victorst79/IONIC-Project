@@ -1,0 +1,17 @@
+<ion-view title="list2">
+	<ion-content>
+		<h1>Mas jugadas Modern</h1>
+
+		<div class="list">
+
+		    <a class="item item-thumbnail-left" ng-repeat="cards in cardsList">
+		    	<img ng-src={{cards.imageUrl}}>
+		      <h2>Nombre: {{cards.name}} </h2>
+		      <p>Tipo: {{cards.type}}</p>
+		      <p>Coste de mana: {{cards.manaCost}}</p>
+		    </a>
+
+	    </div>
+
+	</ion-content>
+</ion-view>
